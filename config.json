@@ -1,0 +1,11 @@
+{
+  "development": {
+    "head": "http://10.10.10.119:8083/",
+    "headHtml":"http://10.1.19.119:8083/"
+
+  },
+  "production": {
+    "head": "http://gwyy.tzecc.com:8083/",
+    "headHtml":"http://gwyy.tzecc.com:8083/"
+  }
+}

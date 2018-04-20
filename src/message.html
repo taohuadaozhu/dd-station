@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>通知消息</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <link rel="shortcut icon" type="image/x-icon" href="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="" />
+    <meta name="copyright" content="" />
+    <link rel="stylesheet" href="./css/task.css" />
+</head>
+
+<body id="confirm">
+    <div class="doc">
+        <div class="task-list">
+            <section>
+                <div id="allmessages">
+                    <div class="message">
+                        <div class="content">
+                            您于2017年9月7日8:30上午开始使用北京xx公司的XXX号工位的预约由于未按时签到已被取消。
+                        </div>
+                        <div class="time">2017-09-07 09:00</div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="./js/http.min.js"></script>
+    <script src="//g.alicdn.com/ilw/cdnjs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://g.alicdn.com/dingding/open-develop/1.6.9/dingtalk.js"></script>
+    <!-- <script type="text/javascript" src='http://lib.baomitu.com/zepto/1.1.7/zepto.min.js'></script>
+    <script type="text/javascript" src="https://g.alicdn.com/dingding/open-develop/1.5.1/dingtalk.js"></script> -->
+    <script src="./js/fastclick.js"></script>
+    <script type="text/javascript">
+        //文档见http://open.dingtalk.com/doc/#权限验证配置-beta
+        dd.config({
+            agentId: '', // 必填，微应用ID
+            corpId: '',//必填，企业ID
+            timeStamp: '', // 必填，生成签名的时间戳
+            nonceStr: '', // 必填，生成签名的随机串
+            signature: '', // 必填，签名
+            jsApiList: ['biz.navigation.setLeft', 'biz.navigation.setTitle', 'biz.navigation.setRight', 'biz.util.datepicker', 'biz.navigation.close', 'biz.util.chosen'] // 必填，需要使用的jsapi列表
+        });
+    </script>
+    <script src="./js/message.js" async></script>
+    <script type="text/javascript">
+
+    </script>
+
+</body>
+
+</html>

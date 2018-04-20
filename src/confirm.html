@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>预约信息确认</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <link rel="shortcut icon" type="image/x-icon" href="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="" />
+    <meta name="copyright" content="" />
+    <link rel="stylesheet" href="./css/task.css" />
+</head>
+
+<body id="confirm">
+    <div class="doc">
+        <div class="task-list">
+
+            <section>
+                <div class="title">预约信息确认</div>
+                <div class="info">
+                    <div><span>公司</span><span id="company"></span></div>
+                    <div><span>地址</span><span id="address"></span></div>
+                    <div><span>工位编号</span><span id="station"></span></div>
+                    <div><span>使用时间</span><span id="time"></span></div>
+                </div>
+            </section>
+            <section>
+                <div class="title">个人信息确认</div>
+                <div class="info">
+                    <div><span>姓名</span><span id="name"></span></div>
+                    <!-- <div ><span>工号</span><span id="number"></span></div> -->
+                    <div><span>联系方式</span><span id="mobile"></span></div>
+                    <div><span>所属部门</span><span id="depart"></span></div>
+                </div>
+            </section>
+            <section style="text-align:center;">
+                <div class="btn" id="btn_confirm" style="background-color:#5ec9f6;text-align: center;  width: 1rem;">确认预约</div>
+            </section>
+            <!-- <section class="itemlist" id="todolist">
+                <header class="hd">待完成任务
+                    <span></span>
+                </header>
+                <div class="bd">
+                </div>
+            </section>
+            <section class="itemlist" id="donelist">
+                <header class="hd done">已完成任务
+                    <span></span>
+                </header>
+                <div class="bd">
+                </div>
+            </section> -->
+        </div>
+        <!-- <div class="bottom">
+            <div id="btn_new">新增预约</div>
+            <div id="btn_record">预约记录</div>
+        </div> -->
+    </div>
+    <script src="./js/http.min.js"></script>
+    <script src="//g.alicdn.com/ilw/cdnjs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://g.alicdn.com/dingding/open-develop/1.6.9/dingtalk.js"></script>
+    <!-- <script type="text/javascript" src='http://lib.baomitu.com/zepto/1.1.7/zepto.min.js'></script>
+    <script type="text/javascript" src="https://g.alicdn.com/dingding/open-develop/1.5.1/dingtalk.js"></script> -->
+    <script src="./js/fastclick.js"></script>
+    <script type="text/javascript">
+        //文档见http://open.dingtalk.com/doc/#权限验证配置-beta
+        dd.config({
+            agentId: '', // 必填，微应用ID
+            corpId: '',//必填，企业ID
+            timeStamp: '', // 必填，生成签名的时间戳
+            nonceStr: '', // 必填，生成签名的随机串
+            signature: '', // 必填，签名
+            jsApiList: ['biz.navigation.setLeft', 'biz.navigation.setTitle', 'biz.navigation.setRight', 'biz.util.datepicker', 'biz.navigation.close', 'biz.util.chosen'] // 必填，需要使用的jsapi列表
+        });
+    </script>
+    <script src="./js/confirm.js" async></script>
+    <script type="text/javascript">
+
+    </script>
+
+</body>
+
+</html>

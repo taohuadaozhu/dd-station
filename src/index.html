@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>工位预约</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <link rel="shortcut icon" type="image/x-icon" href="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="" />
+    <meta name="copyright" content="" />
+    <link rel="stylesheet" href="./css/task.css" />
+</head>
+
+<body>
+    <div class="doc">
+        <div class="task-list">
+            <section class="userinfo">
+                <img id="avatar" src ='images/tou.png'>
+                <div>
+                    <div id="username">用户姓名</div>
+                    <div id="userdepart">用户所属部门</div>
+                </div>
+
+            </section>
+            <section id="edit" style="display:none;">
+                <div style="font-weight: bold;">
+                    编辑工位
+                    <span class="goto"></span>
+                </div>
+            </section>
+            <section >
+                <div class="title">最近预约</div>
+                <div class="nonebook">
+                    <h3>您当前没有预约任何工位</h3>
+                    <!-- <div class="btn" id="btn_new1">我要预约</div> -->
+                    <a href="./add.html" class="btn">我要预约</a>
+                </div>
+                <div class="havebook">
+                    <p btntype="recent"></p>
+                    <div class="btns">
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="title">通知消息</div>
+                <div id="allmessages">
+                    <div class="message">
+                        <div class="content">
+                            您于2017年9月7日8:30上午开始使用北京xx公司的XXX号工位的预约由于未按时签到已被取消。
+                        </div>
+                        <div class="time">2017-09-07 09:00</div>
+                    </div>
+                </div>
+                <div class="more" onclick="getMoreMessage()">查看更多</div>
+            </section>
+            <!-- <section class="itemlist" id="todolist">
+                <header class="hd">待完成任务
+                    <span></span>
+                </header>
+                <div class="bd">
+                </div>
+            </section>
+            <section class="itemlist" id="donelist">
+                <header class="hd done">已完成任务
+                    <span></span>
+                </header>
+                <div class="bd">
+                </div>
+            </section> -->
+        </div>
+        <div class="bottom">
+            <!-- <div id="btn_new">新增预约</div> -->
+            <!-- <div id="btn_record">预约记录</div> -->
+            <a href="./add.html">新增预约</a>
+            <a href="./record.html">预约记录</a>
+        </div>
+    </div>
+    <script src="./js/http.min.js"></script>
+    <script src="//g.alicdn.com/ilw/cdnjs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://g.alicdn.com/dingding/open-develop/1.6.9/dingtalk.js"></script>
+    <!-- <script type="text/javascript" src='http://lib.baomitu.com/zepto/1.1.7/zepto.min.js'></script>
+    <script type="text/javascript" src="https://g.alicdn.com/dingding/open-develop/1.5.1/dingtalk.js"></script> -->
+    <script src="./js/fastclick.js"></script>
+    <script src="./js/index.js" async></script>
+    <script type="text/javascript">
+    </script>
+
+</body>
+
+</html>

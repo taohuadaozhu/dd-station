@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>选择工位</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <link rel="shortcut icon" type="image/x-icon" href="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="" />
+    <meta name="copyright" content="" />
+    <link rel="stylesheet" href="./css/task.css" />
+</head>
+
+<body>
+    <div class="doc">
+        <div class="task-add" id="task-add">
+           
+            <div class="cells cells-form" style="font-size:.14rem;">
+                    <div style="padding: .10rem .15rem;">
+                            <div>
+                                <div id="company">北京市 天职工程咨询股份有限公司</div>
+                                <div id="address">北京市海淀区紫竹院南路20号外文文化创 意园12号楼</div>
+                            </div>
+                        </div>
+                <div class="cell">
+                    <div class="cell-hd">
+                        <label class="label">开始时间</label>
+                    </div>
+                    <div class="cell-bd cell-primary datepickerstart">
+                        <div class="date" id="start-date"></div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="cell-hd">
+                        <label class="label">结束时间</label>
+                    </div>
+                    <div class="cell-bd cell-primary datepickerend">
+                        <div class="date" id="end-date"></div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="cell-hd">
+                        <label class="label">楼层</label>
+                    </div>
+                    <div class="cell-bd cell-primary select-type">
+                        <div class="select"></div>
+                        <input type="hidden" name="taskType" id="taskType" />
+                    </div>
+                </div>
+                <div class="cell">
+                        <div class="cell-hd">
+                            <label class="label">座位号</label>
+                        </div>
+                        <div class="cell-bd cell-primary select-station">
+                            <div class="select select-station"></div>
+                            <input type="hidden" name="taskStation" id="taskStation" />
+                        </div>
+                    </div>
+
+            </div>
+            <div class="tool">
+                    <div><div class="legend station1"></div><div>可预约</div></div>
+                    <div><div class="legend station2"></div>使用中</div>
+                    <div><div class="legend station0"></div>故障</div>
+                    <div><div class="legend station3"></div>固定工位</div>
+            </div>
+            
+            <div class="img-stations"><img id="map" style="height:4.5rem; width:3.6rem;" src="images/stations2_4.png"></div>
+            <!-- <div class="btn" id="confirm" style="position: absolute;">确认</div> -->
+            <!-- <a class="btn" style="position: absolute;" href="./confirm.html">确认</a> -->
+        </div>
+    </div>
+    <script src="./js/http.min.js"></script>
+    <script src="//g.alicdn.com/ilw/cdnjs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//g.alicdn.com/ilw/ding/0.6.2/scripts/dingtalk.js"></script>
+    <script src="./js/fastclick.js"></script>
+    <script type="text/javascript">
+        //文档见http://open.dingtalk.com/doc/#权限验证配置-beta
+        dd.config({
+            agentId: '', // 必填，微应用ID
+            corpId: '', //必填，企业ID
+            timeStamp: '', // 必填，生成签名的时间戳
+            nonceStr: '', // 必填，生成签名的随机串
+            signature: '', // 必填，签名
+            jsApiList: ['biz.navigation.setLeft', 'biz.navigation.setTitle', 'biz.navigation.setRight',
+                'biz.util.datepicker', 'biz.navigation.close', 'biz.util.chosen'
+            ] // 必填，需要使用的jsapi列表
+        });
+    </script>
+    <script src="./js/picture.js" async="async"></script>
+</body>
+
+</html>
